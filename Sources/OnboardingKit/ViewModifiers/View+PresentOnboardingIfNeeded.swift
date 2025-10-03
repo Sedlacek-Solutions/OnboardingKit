@@ -142,7 +142,7 @@ extension OnboardingSheetModifier: ViewModifier {
     }
     .presentOnboardingIfNeeded(
         config: .mock,
-        appIcon: Image(.mockAppIcon),
+        appIcon: Image(.onboardingKitMockAppIcon),
         dataPrivacyContent: {
             Text("Privacy Policy Content")
         }
@@ -155,7 +155,7 @@ extension OnboardingSheetModifier: ViewModifier {
     }
     .presentOnboardingIfNeeded(
         config: .mock,
-        appIcon: Image(.mockAppIcon),
+        appIcon: Image(.onboardingKitMockAppIcon),
         dataPrivacyContent: {
             Text("Privacy Policy Content")
         },

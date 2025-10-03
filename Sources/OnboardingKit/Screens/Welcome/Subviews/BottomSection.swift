@@ -66,7 +66,7 @@ extension BottomSection: View {
     }
 
     private var dataPrivacyImage: some View {
-        Image(.dataPrivacy)
+        Image(.onboardingKitDataPrivacy)
             .resizable()
             .foregroundStyle(accentColor)
             .frame(width: 40, height: 40)

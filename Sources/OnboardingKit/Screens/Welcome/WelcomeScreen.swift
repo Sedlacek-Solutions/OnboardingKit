@@ -80,7 +80,7 @@ extension WelcomeScreen: View {
 #Preview {
     WelcomeScreen(
         config: .mock,
-        appIcon: Image(.mockAppIcon),
+        appIcon: Image(.onboardingKitMockAppIcon),
         continueAction: {
             print("Continue Tapped")
         },

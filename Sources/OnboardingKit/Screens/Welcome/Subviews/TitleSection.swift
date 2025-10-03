@@ -78,7 +78,7 @@ extension TitleSection: View {
 #Preview {
     TitleSection(
         config: .mock,
-        appIcon: Image(.mockAppIcon),
+        appIcon: Image(.onboardingKitMockAppIcon),
         shouldHideAppIcon: true
     )
 }
