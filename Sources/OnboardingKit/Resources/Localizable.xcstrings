@@ -69,6 +69,12 @@
             "state" : "translated",
             "value" : "继续"
           }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Продължи"
+          }
         }
       }
     },
@@ -139,6 +145,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "完成"
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Готово"
           }
         }
       }
@@ -211,6 +223,12 @@
             "state" : "translated",
             "value" : "欢迎使用"
           }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добре дошли в"
+          }
         }
       }
     },
@@ -282,6 +300,12 @@
             "state" : "translated",
             "value" : "收集您的活动信息，但这些信息与您的Apple ID无关。 "
           }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " събира вашата активност, която не е свързана с вашия профил в Apple. "
+          }
         }
       }
     },
@@ -352,6 +376,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "了解数据管理方式..."
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вижте как се управляват вашите данни..."
           }
         }
       }
