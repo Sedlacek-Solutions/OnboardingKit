@@ -65,7 +65,7 @@ OnboardingKit includes localization for the following languages:
 - **Portuguese (pt)**
 - **Russian (ru)**
 - **Chinese Simplified (zh-Hans)**
-- **Bulgaria (bg)**
+- **Bulgarian (bg)**
 
 ## Usage
 
