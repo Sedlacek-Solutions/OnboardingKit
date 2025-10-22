@@ -34,7 +34,6 @@ OnboardingKit is a SwiftUI library that provides an Apple-like app onboarding ex
 - [Configuration Options](#configuration-options)
 - [Contributing](#contributing)
 - [License](#license)
-- [Author](#author)
 
 ## Requirements
 
@@ -245,7 +244,3 @@ For major changes, please open an issue first to discuss what you would like to 
 ## License
 
 OnboardingKit is available under the MIT license. See the LICENSE file for more info.
-
-## Author
-
-James Sedlacek - Find me on [X/Twitter](https://twitter.com/jsedlacekjr) or [LinkedIn](https://www.linkedin.com/in/jamessedlacekjr/)
