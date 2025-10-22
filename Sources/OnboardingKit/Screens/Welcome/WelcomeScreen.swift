@@ -12,18 +12,21 @@ public struct WelcomeScreen<C: View> {
     private let appIcon: Image
     private let continueAction: () -> Void
     private let dataPrivacyContent: () -> C
+    private let signInWithAppleConfiguration: SignInWithAppleButtonConfiguration?
     @State private var isAnimating = false
 
     public init(
         config: OnboardingConfiguration,
         appIcon: Image,
         continueAction: @escaping () -> Void,
-        @ViewBuilder dataPrivacyContent: @escaping () -> C
+        @ViewBuilder dataPrivacyContent: @escaping () -> C,
+        signInWithAppleConfiguration: SignInWithAppleButtonConfiguration? = nil
     ) {
         self.config = config
         self.appIcon = appIcon
         self.continueAction = continueAction
         self.dataPrivacyContent = dataPrivacyContent
+        self.signInWithAppleConfiguration = signInWithAppleConfiguration
     }
 
     private func onAppear() {
@@ -72,12 +75,13 @@ extension WelcomeScreen: View {
             accentColor: config.accentColor,
             appDisplayName: config.appDisplayName,
             continueAction: continueAction,
+            signInWithAppleConfiguration: signInWithAppleConfiguration,
             dataPrivacyContent: dataPrivacyContent
         )
     }
 }
 
-#Preview {
+#Preview("Default") {
     WelcomeScreen(
         config: .mock,
         appIcon: Image(.onboardingKitMockAppIcon),
@@ -87,5 +91,22 @@ extension WelcomeScreen: View {
         dataPrivacyContent: {
             Text("Privacy Policy Content")
         }
+    )
+}
+
+#Preview("Sign in with Apple") {
+    WelcomeScreen(
+        config: .mock,
+        appIcon: Image(.onboardingKitMockAppIcon),
+        continueAction: {
+            print("Continue Tapped")
+        },
+        dataPrivacyContent: {
+            Text("Privacy Policy Content")
+        },
+        signInWithAppleConfiguration: .init(
+            onRequest: { _ in },
+            onCompletion: { _ in }
+        )
     )
 }

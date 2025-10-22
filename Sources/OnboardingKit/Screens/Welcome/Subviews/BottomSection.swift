@@ -12,6 +12,7 @@ struct BottomSection<C: View> {
     private let accentColor: Color
     private let appDisplayName: String
     private let continueAction: () -> Void
+    private let signInWithAppleConfiguration: SignInWithAppleButtonConfiguration?
     private let dataPrivacyContent: () -> C
     @State private var isDataPrivacyPresented: Bool = false
     @State private var isAnimating: Bool = false
@@ -20,11 +21,13 @@ struct BottomSection<C: View> {
         accentColor: Color,
         appDisplayName: String,
         continueAction: @escaping () -> Void,
+        signInWithAppleConfiguration: SignInWithAppleButtonConfiguration? = nil,
         @ViewBuilder dataPrivacyContent: @escaping () -> C
     ) {
         self.accentColor = accentColor
         self.appDisplayName = appDisplayName
         self.continueAction = continueAction
+        self.signInWithAppleConfiguration = signInWithAppleConfiguration
         self.dataPrivacyContent = dataPrivacyContent
     }
 
@@ -89,14 +92,22 @@ extension BottomSection: View {
         .onTapGesture(perform: disclosureAction)
     }
 
+    @ViewBuilder
     private var continueButton: some View {
-        Button(
-            action: continueAction,
-            label: continueText
-        )
-        .font(.title3.weight(.medium))
-        .buttonStyle(.borderedProminent)
-        .tint(accentColor)
+        if let signInWithAppleConfiguration {
+            SignInWithAppleButtonView(
+                configuration: signInWithAppleConfiguration,
+                continueAction: continueAction
+            )
+        } else {
+            Button(
+                action: continueAction,
+                label: continueText
+            )
+            .font(.title3.weight(.medium))
+            .buttonStyle(.borderedProminent)
+            .tint(accentColor)
+        }
     }
 
     private func continueText() -> some View {
