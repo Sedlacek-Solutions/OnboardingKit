@@ -5,6 +5,13 @@ All notable changes to OnboardingKit will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.4] - 2025-10-24
+
+### Added
+- **Bulgarian Language Localization**: Added Bulgarian language support to the localization system.
+- **Sign-in with Apple Button**: New `SignInWithAppleButtonConfiguration` and button component for easy Apple Sign-In integration.
+- **CHANGELOG**: Added this changelog file to track all notable changes to the project.
+
 ## [2.1.3] - 2025-10-03
 
 ### Fixed
@@ -51,6 +58,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial release of OnboardingKit.
 - Basic onboarding functionality for SwiftUI applications.
 
+[2.1.4]: https://github.com/Sedlacek-Solutions/OnboardingKit/releases/tag/2.1.4
 [2.1.3]: https://github.com/Sedlacek-Solutions/OnboardingKit/releases/tag/2.1.3
 [2.1.2]: https://github.com/Sedlacek-Solutions/OnboardingKit/releases/tag/2.1.2
 [2.1.1]: https://github.com/Sedlacek-Solutions/OnboardingKit/releases/tag/2.1.1
