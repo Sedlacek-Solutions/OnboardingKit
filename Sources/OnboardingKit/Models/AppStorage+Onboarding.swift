@@ -21,7 +21,7 @@ public extension AppStorage<Bool> {
     )
 }
 
-extension String {
+public extension String {
     /// The key used to store onboarding completion state in UserDefaults.
     ///
     /// This key is used across the app to consistently reference the same
