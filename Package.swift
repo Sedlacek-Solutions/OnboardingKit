@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "OnboardingKit",
+    name: "SwiftUI-Onboarding",
     defaultLocalization: "en",
     platforms: [
         .macOS(.v15),
@@ -17,24 +17,24 @@ let package = Package(
 // MARK: PackageProduct
 
 fileprivate enum PackageProduct: CaseIterable {
-    case onboardingKit
+    case onboarding
 
     var name: String {
         switch self {
-        case .onboardingKit: "OnboardingKit"
+        case .onboarding: "Onboarding"
         }
     }
 
     var targets: [InternalTarget] {
         switch self {
-        case .onboardingKit:
+        case .onboarding:
             InternalTarget.allCases
         }
     }
 
     var description: PackageDescription.Product {
         switch self {
-        case .onboardingKit:
+        case .onboarding:
             .library(
                 name: self.name,
                 targets: self.targets.map(\.title)
@@ -46,11 +46,11 @@ fileprivate enum PackageProduct: CaseIterable {
 // MARK: InternalTarget
 
 fileprivate enum InternalTarget: CaseIterable {
-    case onboardingKit
+    case onboarding
 
     var title: String {
         switch self {
-        case .onboardingKit: return "OnboardingKit"
+        case .onboarding: return "Onboarding"
         }
     }
 
@@ -64,7 +64,7 @@ fileprivate enum InternalTarget: CaseIterable {
 
     var resources: [Resource]? {
         switch self {
-        case .onboardingKit:
+        case .onboarding:
             [
                 .process("Resources/Media.xcassets"),
                 .process("Resources/Localizable.xcstrings")
