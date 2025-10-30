@@ -1,11 +1,11 @@
 # SwiftUI-Onboarding
 
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
-[![GitHub stars](https://img.shields.io/github/stars/JamesSedlacek/OnboardingKit.svg)](https://github.com/JamesSedlacek/OnboardingKit/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/JamesSedlacek/OnboardingKit.svg?color=blue)](https://github.com/JamesSedlacek/OnboardingKit/network)
-[![GitHub contributors](https://img.shields.io/github/contributors/JamesSedlacek/OnboardingKit.svg?color=blue)](https://github.com/JamesSedlacek/OnboardingKit/network)
-<a href="https://github.com/JamesSedlacek/OnboardingKit/pulls"><img src="https://img.shields.io/github/issues-pr/JamesSedlacek/OnboardingKit" alt="Pull Requests Badge"/></a>
-<a href="https://github.com/JamesSedlacek/OnboardingKit/issues"><img src="https://img.shields.io/github/issues/JamesSedlacek/OnboardingKit" alt="Issues Badge"/></a>
+[![GitHub stars](https://img.shields.io/github/stars/Sedlacek-Solutions/SwiftUI-Onboarding.svg)](https://github.com/Sedlacek-Solutions/SwiftUI-Onboarding/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Sedlacek-Solutions/SwiftUI-Onboarding.svg?color=blue)](https://github.com/Sedlacek-Solutions/SwiftUI-Onboarding/network)
+[![GitHub contributors](https://img.shields.io/github/contributors/Sedlacek-Solutions/SwiftUI-Onboarding.svg?color=blue)](https://github.com/Sedlacek-Solutions/SwiftUI-Onboarding/network)
+<a href="https://github.com/Sedlacek-Solutions/SwiftUI-Onboarding/pulls"><img src="https://img.shields.io/github/issues-pr/Sedlacek-Solutions/SwiftUI-Onboarding" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/Sedlacek-Solutions/SwiftUI-Onboarding/issues"><img src="https://img.shields.io/github/issues/Sedlacek-Solutions/SwiftUI-Onboarding" alt="Issues Badge"/></a>
 
 https://github.com/user-attachments/assets/ce319597-e5ba-434a-ab45-c66a6a7e501a
 
@@ -47,7 +47,7 @@ You can install `Onboarding` using the Swift Package Manager.
 
 1. In Xcode, select "File" > "Add Package Dependencies"
 2. Copy & paste the following into the "Search or Enter Package URL" search bar:
-```https://github.com/JamesSedlacek/OnboardingKit.git```
+```https://github.com/Sedlacek-Solutions/SwiftUI-Onboarding.git```
 3. Xcode will fetch the repository & the "Onboarding" library will be added to your project
 
 ## Supported Languages
