@@ -1,4 +1,4 @@
-# OnboardingKit
+# SwiftUI-Onboarding
 
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![GitHub stars](https://img.shields.io/github/stars/JamesSedlacek/OnboardingKit.svg)](https://github.com/JamesSedlacek/OnboardingKit/stargazers)
@@ -10,7 +10,7 @@
 https://github.com/user-attachments/assets/ce319597-e5ba-434a-ab45-c66a6a7e501a
 
 ## Description
-OnboardingKit is a SwiftUI library that provides an Apple-like app onboarding experience.
+SwiftUI-Onboarding is a SwiftUI library that provides an Apple-like app onboarding experience.
 
 ## Features
 
@@ -43,16 +43,16 @@ OnboardingKit is a SwiftUI library that provides an Apple-like app onboarding ex
 
 ## Installation
 
-You can install `OnboardingKit` using the Swift Package Manager.
+You can install `Onboarding` using the Swift Package Manager.
 
 1. In Xcode, select "File" > "Add Package Dependencies"
 2. Copy & paste the following into the "Search or Enter Package URL" search bar:
 ```https://github.com/JamesSedlacek/OnboardingKit.git```
-3. Xcode will fetch the repository & the "OnboardingKit" library will be added to your project
+3. Xcode will fetch the repository & the "Onboarding" library will be added to your project
 
 ## Supported Languages
 
-OnboardingKit includes localization for the following languages:
+Onboarding includes localization for the following languages:
 
 - **English (en)**
 - **German (de)** 
@@ -72,7 +72,7 @@ OnboardingKit includes localization for the following languages:
 
 1. **Create your onboarding configuration:**
 ```swift
-import OnboardingKit
+import Onboarding
 import SwiftUI
 
 extension OnboardingConfiguration {
@@ -103,7 +103,7 @@ extension OnboardingConfiguration {
 
 2. **Add onboarding to your app's root view:**
 ```swift
-import OnboardingKit
+import Onboarding
 import SwiftUI
 
 @main
@@ -165,7 +165,7 @@ ContentView()
 
 Access the convenient AppStorage extension for manual control:
 ```swift
-import OnboardingKit
+import Onboarding
 
 struct SettingsView: View {
     @AppStorage(.onboardingKey) private var isOnboardingCompleted = false
@@ -184,7 +184,7 @@ struct SettingsView: View {
 
 Present onboarding as a sheet above your main content, instead of replacing the root view:
 ```swift
-import OnboardingKit
+import Onboarding
 import SwiftUI
 
 @main
@@ -243,4 +243,4 @@ For major changes, please open an issue first to discuss what you would like to 
 
 ## License
 
-OnboardingKit is available under the MIT license. See the LICENSE file for more info.
+SwiftUI-Onboarding is available under the MIT license. See the LICENSE file for more info.

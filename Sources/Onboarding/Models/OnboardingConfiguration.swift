@@ -82,7 +82,7 @@ public struct OnboardingConfiguration {
 @MainActor
 public extension OnboardingConfiguration {
     static let mock = Self.init(
-        appDisplayName: .init("OnboardingKit"),
+        appDisplayName: .init("Onboarding"),
         features: [.mock, .mock2, .mock3, .mock4, .mock5, .mock6]
     )
 }
